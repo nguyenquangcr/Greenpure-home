@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <header className="absolute w-full max-w-[1440px] py-8 xl:py-10 h-full">
+    <header className="absolute w-full max-w-[1440px] py-8 xl:py-10">
       <div className="container m-auto">
         {/* logo, nav (desktop), btn */}
         <div className="flex items-center justify-between">
