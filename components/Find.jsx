@@ -34,13 +34,27 @@ const Find = () => {
       <div className="container mx-auto">
         {/* text */}
         <div className="text-center">
-          <h2 className="h2 mb-6">Find your best hotel</h2>
-          <p className="max-w-[638px] mx-auto mb-8">
+          <motion.h2
+            variants={fadeIn("up", 0.2)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}
+            className="h2 mb-6"
+          >
+            Find your best hotel
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("up", 0.4)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}
+            className="max-w-[638px] mx-auto mb-8"
+          >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iure
             cum assumenda quibusdam, nostrum iusto ab at inventore repudiandae
             nemo aliquam nulla placeat sapiente fugiat tempora quos libero
             veritatis! Unde.
-          </p>
+          </motion.p>
           <div>
             <Button variant="accent" className="px-12 mb-14 xl:mb-28">
               View All
@@ -48,7 +62,13 @@ const Find = () => {
           </div>
         </div>
         {/* hotel grid */}
-        <div className="grid gap-y-10 xl:gap-y-0 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-[30px]">
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="grid gap-y-10 xl:gap-y-0 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-[30px]"
+        >
           {hotelData.map((hotel, index) => {
             return (
               <div
@@ -57,10 +77,18 @@ const Find = () => {
                 key={index}
               >
                 <Image src={hotel.image} width={270} height={270} alt="" />
+                <div className="p-6">
+                  <h4 className="h4 group-hover:text-white transition-all duration-300">
+                    {hotel.name}
+                  </h4>
+                  <p className="group-hover:text-white transition-all duration-300">
+                    {hotel.location}
+                  </p>
+                </div>
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
