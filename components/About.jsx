@@ -8,8 +8,8 @@ import { useMediaQuery } from "react-responsive";
 import Stats from "./Stats";
 
 const About = () => {
-  const [ref, inView] = useInView({ threshold: 0.5 });
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const [ref, inView] = useInView({ threshold: !isMobile ? 0.5 : null });
 
   return (
     <section className="py-12 xl:pt-0 xl: pb-24" ref={ref}>
