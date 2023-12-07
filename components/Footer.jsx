@@ -22,11 +22,12 @@ const Footer = () => {
               <Link href={"/"}>
                 <Image
                   src={"/footer/logo.svg"}
-                  width={180}
-                  height={60}
+                  width={158}
+                  height={48}
                   alt=""
                   className="mb-2"
                 />
+                {/* <image src={"/footer/logo.svg"} /> */}
               </Link>
               <p className="text-lg leading-9">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.

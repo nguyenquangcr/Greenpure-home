@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -11,7 +12,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* logo */}
           <Link href={"/"}>
-            <h1 className="text-2xl font-bold text-white">Green Pure House</h1>
+            {/* <h1 className="text-2xl font-bold text-white">Green Pure House</h1> */}
+            <Image
+              src={"/footer/logo.svg"}
+              width={158}
+              height={48}
+              alt=""
+              className="mb-2"
+            />
           </Link>
           {/* nav & btn */}
           <div className="hidden xl:flex">
