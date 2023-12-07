@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="absolute w-full max-w-[1440px] py-8 xl:py-10">
+    <header className="absolute w-full max-w-[1440px] py-7 xl:py-9">
       <div className="container m-auto">
         {/* logo, nav (desktop), btn */}
         <div className="flex items-center justify-between">
@@ -15,10 +15,10 @@ const Header = () => {
             {/* <h1 className="text-2xl font-bold text-white">Green Pure House</h1> */}
             <Image
               src={"/footer/logo.svg"}
-              width={158}
-              height={48}
+              width={120}
+              height={30}
               alt=""
-              className="mb-2"
+              className="w-[125px] xl:w-[430px]"
             />
           </Link>
           {/* nav & btn */}
@@ -35,7 +35,7 @@ const Header = () => {
           </div>
         </div>
         {/* mobile nav */}
-        <div className="xl:hidden absolute right-8 top-8">
+        <div className="xl:hidden absolute right-9 top-9">
           <MobileNav />
         </div>
       </div>
