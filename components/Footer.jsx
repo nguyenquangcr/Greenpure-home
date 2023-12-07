@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="flex-1">
                 <h4 className="h4 mb-6">Contact Us</h4>
                 <ul className="flex flex-col gap-y-6 text-lg">
-                  <li>+84 938 097512</li>
+                  <li>+84 39 939 2024</li>
                   <li>greenpurehouse@gmail.com</li>
                   <li>greenpurehouse.com.vn</li>
                 </ul>

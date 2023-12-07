@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* logo */}
           <Link href={"/"}>
-            <h1 className="text-2xl font-bold text-white">Hotely</h1>
+            <h1 className="text-2xl font-bold text-white">Green Pure House</h1>
           </Link>
           {/* nav & btn */}
           <div className="hidden xl:flex">
