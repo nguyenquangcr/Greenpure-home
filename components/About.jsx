@@ -23,7 +23,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.4 }}
             className="flex-1 relative"
           >
-            <Image src={"/about/img2.png"} width={559} height={721} alt="" />
+            <Image src={"/about/img2.jpg"} width={559} height={721} alt="" />
           </motion.div>
           {/* text */}
           <motion.div
