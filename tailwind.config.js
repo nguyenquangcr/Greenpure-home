@@ -22,8 +22,11 @@ module.exports = {
       white: '#fff',
       black: '#273029',
       soft_green: {
-        DEFAULT: '#85c7dc',
-        secondary: '#f3f9fb'
+
+        DEFAULT: '#c8e066',
+        // '#85c7dc',
+        secondary: '#f4f5ef85'
+        // '#f3f9fb'
       },
       grey: {
         DEFAULT: '#888',
